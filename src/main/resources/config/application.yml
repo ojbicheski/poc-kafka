@@ -1,0 +1,23 @@
+spring:
+
+    application:
+        name: PoC
+
+server:
+
+    port: 8080
+
+kafka:
+
+    bootstrap-address: localhost:9092
+    schema-register: http://localhost:8081
+
+    topics:
+        transfer-message: kt-transfer-message
+        customer-contact: kt-customer-contact
+
+    consumers:
+        transfer-message:
+            group-id: transfer-message
+        customer-contact:
+            group-id: customer-contact

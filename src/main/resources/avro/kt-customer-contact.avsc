@@ -1,0 +1,23 @@
+{
+	"namespace": "management.customer.contact.avro",
+	"type": "record",
+	"name": "CustomerContact",
+	"fields": [
+		{
+			"name": "id",
+			"type": "int"
+		},
+		{
+			"name": "name",
+			"type": "string"
+		},
+		{
+			"name": "email",
+			"type": [
+				"null",
+				"string"
+			],
+			"default": "null"
+		}
+	]
+}
